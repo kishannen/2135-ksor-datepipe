@@ -22,29 +22,38 @@
 
     <div class="base">
       <h3>BASIS</h3>
-      <b> Today's date  :- </b> {{ present | date }} <br />
+      <b> Today's date :- </b> {{ present | date }} <br />
       <b> Today's date : - </b> {{ present }}
     </div>
 
-    
+    <div class="container text-center">
+      <div class="row row-cols-3 row-cols-lg-3">
+        <div class="col" id="container1">
+          <div class="p-3" id="container1">
+            <h2 id="container1">CHAINED PIPES</h2>
+            Days with uppercase :- {{ present | date: 'fullDate' | uppercase }}
+            <br />
+            Days with lowercase :- {{ present | date: 'medium' | lowercase }}
+            <br />
+          </div>
+        </div>
+        <div class="col" id="container2">
+          <div class="p-3" id="container2">
+            <h2 id="container2">PARAMETERS IN DATES</h2>
 
-    <h2>CHAINED PIPES</h2>
-    <div>
-      Days with uppercase :- {{ present | date: 'fullDate' | uppercase }} <br />
-      Days with lowercase :- {{ present | date: 'medium' | lowercase }} <br />
-    </div>
-
-    <h2>PARAMETERS IN DATES</h2>
-    <div>
-      This is a short date: {{ present | date: 'shortDate' }}<br />
-      This is a full date: {{ present | date: 'fullDate' }}<br />
-      This is a formatted date: {{ present | date: 'yyyy/mm/dd' }}<br />
-      This indicates hour and minutes: {{ present | date: 'h:mm' }}<br />
-    </div>
-
-    <h2>ASYNC PIPES</h2>
-    <div>
-      Seconds changing in Time: {{ todayO$ | async | date: 'mediumTime' }}
+            This is a short date: {{ present | date: 'shortDate' }}<br />
+            This is a full date: {{ present | date: 'fullDate' }}<br />
+            This is a formatted date: {{ present | date: 'yyyy/mm/dd' }}<br />
+            This indicates hour and minutes: {{ present | date: 'h:mm' }}<br />
+          </div>
+        </div>
+        <div class="col" id="container3">
+          <div class="p-3" id="container3">
+            <h2 id="container3">ASYNC PIPES</h2>
+            Seconds changing in Time: {{ todayO$ | async | date: 'mediumTime' }}
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

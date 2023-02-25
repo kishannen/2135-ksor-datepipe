@@ -1,24 +1,51 @@
+*{
+  background-color: #ffe0e0;
+}
 .title-card {
   text-align: center;
+  margin: 10px;
 }
 .line {
   background-color: black;
   height: 3px;
   border: none;
 }
-.g-col-4{
-  background-color: rgba(80, 63, 6, 0.178);
+.g-col-4 {
+  background-color: rgba(206, 171, 55, 0.178);
   text-align: center;
   height: 120px;
-  font-size: 50px;
+  font-size: 40px;
   box-shadow: 2.25px 2px 2px 2px rgb(44, 42, 42, 0.5);
   border: 2px double;
   border-radius: 5px;
   border-color: rgb(148, 76, 8);
 }
-.base h3{
+.base h3 {
   text-align: center;
 }
-.base{
+.base {
+  margin: 25px;
   text-align: center;
+}
+
+#container1, #container2, #container3{
+  background-color: #fff;
+}
+
+#container1{
+  margin-left: -10px;
+  margin-right: 2.5px;
+  align-items: center;
+  text-align: center;
+ 
+}
+
+h2#container1, p#container{
+  text-align: center;
+  padding-left: 20px;
+}
+
+#container3{
+  margin-left: 3.5px;
+  margin-right: 2px;
 }
