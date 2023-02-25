@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Pipes</title>
+</head>
+<body>
+
+  <div class="title-card">
+  <h1>ANGULAR PIPES DEMONSTRATION</h1>
+  <h2>Date Pipes</h2>
+  </div>
+  <hr>
+  <div>
+    <h3>Today's date :- {{ present }}</h3>
+    <h3>Today's date :- {{ present | date }}</h3>
+  </div>
+
+  <h2>CHAINED PIPES</h2>
+  <div>
+    Days with uppercase :- {{ present | date: 'fullDate' | uppercase }} <br />
+    Days with lowercase :- {{ present | date: 'medium' | lowercase }}
+  </div>
+
+  <h2>PARAMETERS IN DATES</h2>
+  <div>
+    This is a short date: {{ present | date: 'shortDate' }}<br />
+    This is a full date: {{ present | date: 'fullDate' }}<br />
+    This is a formatted date: {{ present | date: 'M/dd/yyyy' }}<br />
+    This indicates hour and minutes: {{ present | date: 'h:mm' }}<br />
+  </div>
+
+  <h2>ASYNC PIPES</h2>
+  <div>Seconds changing in Time: {{ todayO$ | async | date: 'mediumTime' }}</div>
+
+</body>
+</html>
