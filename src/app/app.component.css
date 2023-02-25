@@ -1,4 +1,4 @@
-*{
+* {
   background-color: #ffe0e0;
 }
 .title-card {
@@ -28,24 +28,26 @@
   text-align: center;
 }
 
-#container1, #container2, #container3{
+#container1,
+#container2,
+#container3 {
   background-color: #fff;
 }
 
-#container1{
+#container1 {
   margin-left: -10px;
   margin-right: 2.5px;
   align-items: center;
   text-align: center;
- 
 }
 
-h2#container1, p#container{
+h2#container1,
+p#container {
   text-align: center;
   padding-left: 20px;
 }
 
-#container3{
+#container3 {
   margin-left: 3.5px;
   margin-right: 2px;
 }
