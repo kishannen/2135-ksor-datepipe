@@ -1,6 +1,24 @@
 .title-card {
   text-align: center;
 }
-hr {
-  color: black;
+.line {
+  background-color: black;
+  height: 3px;
+  border: none;
+}
+.g-col-4{
+  background-color: rgba(80, 63, 6, 0.178);
+  text-align: center;
+  height: 120px;
+  font-size: 50px;
+  box-shadow: 2.25px 2px 2px 2px rgb(44, 42, 42, 0.5);
+  border: 2px double;
+  border-radius: 5px;
+  border-color: rgb(148, 76, 8);
+}
+.base h3{
+  text-align: center;
+}
+.base{
+  text-align: center;
 }
